@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expression Validation</title>
+</head>
+
+<body>
+    <div class="container mt-2" id="error">
+        <h1 style="text-align:center">Sign Up Form</h1>
+        <hr>
+        <br>
+        <form id="form">
+            <div class="row mb-2">
+                <div class="col-4">
+                    <text style="font-size: 23px; font-weight: bold;">First name :</text>
+                </div>
+                <div class="col-8">
+                    <input id="firstName" class="form-control" type="text">
+                    <p class="" id="output"></p>
+                </div>
+            </div>
+
+
+            <div class="row mb-2">
+                <div class="col-4">
+                    <text style="font-size: 23px; font-weight: bold;">Last name :</text>
+                </div>
+                <div class="col-8">
+                    <input id="lastName" class="form-control" type="text">
+                    <p class="" id="output2"></p>
+                </div>
+            </div>
+
+            <div class="row mb-2">
+                <div class="col-4">
+                    <text style="font-size: 23px; font-weight: bold;">Email :</text>
+                </div>
+                <div class="col-8">
+                    <input id="email" class="form-control" type="">
+                    <p class="" id="output3"></p>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="row mb-2">
+                <div class="col-5">
+                    <text style="font-size: 23px; font-weight: bold;">Gender :</text>
+                </div>
+                <div class="col-3">
+                    <select class="form-control" id="gender">
+                        <option>-----</option>
+                        <option>Male</option>
+                        <option>Female</option>
+                    </select>
+                    <p id="output9"></p>
+                </div>
+            </div>
+
+            <div class="row mb-2">
+                <div class="col-5">
+                    <text style="font-size: 23px; font-weight: bold;">Date of Birth :</text>
+                </div>
+                <div class="col-5">
+                    <input id="dob" class="form-control" type="date" required>
+                </div>
+
+            </div>
+            <br>
+
+            <div class="row mb-2">
+                <div class="col-5">
+                    <text style="font-size: 20px; font-weight: bold;">Contact Number :</text>
+                </div>
+                <div class="col-5">
+                    <input id="contactNum" class="form-control" placeholder="Mobile / Telephone" type="number">
+                    <p class="" id="output6"></p>
+                </div>
+            </div>
+            <br>
+            <div class="row mb-2">
+                <div class="col-5">
+                    <text style="font-size: 23px; font-weight: bold;">Password :</text>
+                </div>
+                <div class="col-7">
+                    <input id="password" class="form-control" type="password">
+                    <p class="" id="output7"></p>
+                </div>
+            </div>
+
+
+            <div class="row mb-2">
+                <div class="col-5">
+                    <text style="font-size: 19px; font-weight: bold;">Confirm Password:</text>
+                </div>
+                <div class="col-7">
+                    <input id="confirmPass" class="form-control" type="password">
+                    <p class="" id="output8"></p>
+                </div>
+            </div>
+            <br>
+            <button type="submit" class="btn btn-primary btn-md form-control mb-2">Submit</button>
+        </form>
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
